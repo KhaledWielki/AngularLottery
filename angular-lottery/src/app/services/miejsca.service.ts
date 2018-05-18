@@ -7,9 +7,10 @@ import {  HttpClient } from '@angular/common/http';
 export class MiejscaService {
 
   constructor(private http: HttpClient) { 
+    this.getMiejsca();
   }
 
   public getMiejsca() {
-    console.log(this.http.get("http://127.0.0.1/miejsca"));
+    this.http.get("http://127.0.0.1/api/miejsca").subscribe(v => console.log(v));
   }
 }

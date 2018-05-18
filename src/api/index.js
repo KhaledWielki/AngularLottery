@@ -1,6 +1,10 @@
 import { Router } from 'express'
 import user from './user'
 import auth from './auth'
+import miejsca from './miejsca'
+import loteria from './loteria'
+import regulamin from './regulamin'
+import uzytkownik from './uzytkownik'
 
 const router = new Router()
 
@@ -29,5 +33,9 @@ const router = new Router()
  */
 router.use('/users', user)
 router.use('/auth', auth)
+router.use('/miejsca', miejsca)
+router.use('/loteria', loteria)
+router.use('/regulamin', regulamin)
+router.use('/uzytkownik', uzytkownik)
 
 export default router
