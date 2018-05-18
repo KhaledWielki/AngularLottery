@@ -37,7 +37,7 @@ const config = {
   },
   test: {
     mongo: {
-      uri: 'mongodb://localhost/angular-lottery-rest-test',
+      uri: 'mongodb://localhost/angular-lottery-test',
       options: {
         debug: false
       }
@@ -45,7 +45,7 @@ const config = {
   },
   development: {
     mongo: {
-      uri: 'mongodb://localhost/angular-lottery-rest-dev',
+      uri: 'mongodb://localhost/angular-lottery-dev',
       options: {
         debug: true
       }
@@ -55,7 +55,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/angular-lottery-rest'
+      uri: process.env.MONGODB_URI || 'mongodb://localhost/angular-lottery'
     }
   }
 }
