@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class MiejscaService {
 
-  constructor() { }
+  constructor() { 
+    console.log("Test serwisu miejsca");
+  }
 }
