@@ -10,7 +10,6 @@ export class MiejscaService {
   }
 
   public getMiejsca() {
-    
-
+    console.log(this.http.get("http://127.0.0.1/miejsca"));
   }
 }
