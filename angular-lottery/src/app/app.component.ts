@@ -14,6 +14,9 @@ export class AppComponent {
               private loteria: LoteriaService,
               private regulamin: RegulaminService,
               private uzytkownik: UzytkownikService) {
+              this.miejsca.postMiejsce().subscribe(v => {
+                console.log("Utowrzony" , v);
+              });
 
   }
   title = 'app';
