@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MiejscaService } from './services/miejsca.service';
+import {LoteriaService} from "./services/loteria.service";
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { MiejscaService } from './services/miejsca.service';
   imports: [
     BrowserModule
   ],
-  providers: [MiejscaService],
+  providers: [MiejscaService,
+              LoteriaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
