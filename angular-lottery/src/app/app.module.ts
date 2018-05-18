@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MiejscaService } from './services/miejsca.service';
-import {LoteriaService} from "./services/loteria.service";
+import { LoteriaService } from "./services/loteria.service";
+import { HttpClient } from 'selenium-webdriver/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {LoteriaService} from "./services/loteria.service";
     BrowserModule
   ],
   providers: [MiejscaService,
-              LoteriaService
+              LoteriaService,
+              HttpClient
   ],
   bootstrap: [AppComponent]
 })
