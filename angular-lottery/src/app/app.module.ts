@@ -7,6 +7,8 @@ import { LoteriaService } from "./services/loteria.service";
 import {RegulaminService} from "./services/regulamin.service";
 import {UzytkownikService} from "./services/uzytkownik.service";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {ZgloszeniaDoLoteriiService} from "./services/zgloszenia-do-loterii.service";
+import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
               LoteriaService,
               RegulaminService,
               UzytkownikService,
+              ZgloszeniaDoLoteriiService,
+              WynikiLoteriiService,
               HttpClient
   ],
   bootstrap: [AppComponent]

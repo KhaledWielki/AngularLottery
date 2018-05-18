@@ -3,6 +3,8 @@ import { MiejscaService } from './services/miejsca.service';
 import {LoteriaService} from "./services/loteria.service";
 import {RegulaminService} from "./services/regulamin.service";
 import {UzytkownikService} from "./services/uzytkownik.service";
+import {ZgloszeniaDoLoteriiService} from "./services/zgloszenia-do-loterii.service";
+import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 
 @Component({
   selector: 'app-root',
