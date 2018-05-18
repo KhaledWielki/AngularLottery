@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MiejscaService } from './services/miejsca.service';
 import { LoteriaService } from "./services/loteria.service";
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { HttpClient } from '@angular/common/http';
   ],
   providers: [MiejscaService,
               LoteriaService,
-              HttpClient
+              HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
