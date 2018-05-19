@@ -21,10 +21,10 @@
             </th>
             <th><input [(ngModel)]="uzytkownik.email" placeholder="email" id="email" type="text" class="validate"></th>
             <th>
-              <a *ngIf="uzytkownik.usuniety" class="btn-floating btn-large waves-effect waves-light red">
+              <a *ngIf="uzytkownik.usuniety == 'false'" (click)="remove(uzytkownik)" class="btn-floating btn-large waves-effect waves-light red">
                 <i class="material-icons">check</i>
               </a>
-              <a *ngIf="!uzytkownik.usuniety" class="btn-floating btn-large waves-effect waves-light green">
+              <a *ngIf="uzytkownik.usuniety == 'true'" (click)="remove(uzytkownik)" class="btn-floating btn-large waves-effect waves-light green">
                 <i class="material-icons">close</i>
               </a>
             </th>

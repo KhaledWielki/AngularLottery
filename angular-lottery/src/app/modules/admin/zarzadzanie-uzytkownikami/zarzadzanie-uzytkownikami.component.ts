@@ -41,6 +41,13 @@ export class ZarzadzanieUzytkownikamiComponent implements OnInit {
     });
     this.getUsers();
   }
+  public remove(user: UzytkownikI) {
+    if (user.usuniety === 'false') {
+      user.usuniety = 'true';
+    } else {
+      user.usuniety = 'false';
+    }
+  }
 
   ngOnInit() {
   }
