@@ -18,12 +18,12 @@ export class ZgloszeniaDoLoteriiService {
     return this.http.get<ZgloszeniaDoLoterii>("http://127.0.0.1:9000/zgloszeniaDoLoterii");
   }
 
-  public postZgloszenia() {
+  public postZgloszenia(zgloszenia: ZgloszeniaDoLoterii) {
     return this.http.post("http://127.0.0.1:9000/zgloszeniaDoLoterii",
       {
-        "id_uzytkownika": "1",
-        "id_loterii": "1",
-        "zaakceptowany": "true"
+        "id_uzytkownika": zgloszenia.id_uzytkownika,
+        "id_loterii": zgloszenia.id_loterii,
+        "zaakceptowany": zgloszenia.zaakcepotawany
       });
   }
 }

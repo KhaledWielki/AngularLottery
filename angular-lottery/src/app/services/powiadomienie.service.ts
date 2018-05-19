@@ -18,12 +18,12 @@ export class PowiadomienieService {
     return this.http.get<Powiadomienie>("http://127.0.0.1:9000/powiadomienie");
   }
 
-  public postPowiadomienie() {
+  public postPowiadomienie(powiadomienie: Powiadomienie) {
     return this.http.post("http://127.0.0.1:9000/powiadomienie",
       {
-        "data": "2018-05-18",
-        "tresc": "Ladne powiadomienie",
-        "tytul": "Tytul powiadomienia"
+        "data": powiadomienie.data,
+        "tresc": powiadomienie.tresc,
+        "tytul": powiadomienie.tytul
       });
   }
 }

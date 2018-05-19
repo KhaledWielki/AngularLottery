@@ -18,11 +18,11 @@ export class MiejscaService {
     return this.http.get<Miejsce>("http://127.0.0.1:9000/miejsca");
   }
 
-  public postMiejsce() {
+  public postMiejsce(miejsce: Miejsce) {
     return this.http.post("http://127.0.0.1:9000/miejsca",
       {
-        "nr_miejsca": 10,
-        "wolne": "true" }
+        "nr_miejsca": miejsce.nr_miejsca,
+        "wolne": miejsce.wolne }
     );
   }
 }

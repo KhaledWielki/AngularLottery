@@ -25,7 +25,7 @@ export class UzytkownikService {
         "nazwisko": uzytkownik.nazwisko,
         "haslo": uzytkownik.haslo,
         "email": uzytkownik.email,
-        "usuniety": "false",
+        "usuniety": uzytkownik.usuniety,
         "rola": uzytkownik.rola
       });
   }
