@@ -21,9 +21,9 @@ import { AdminModule } from './modules/admin/admin.module';
 
 
 const appRoutes: Routes = [
-  { path: 'login', loadChildren: 'app/modules/login/login.module'},
-  { path: 'user', loadChildren: 'app/modules/user/user.module'},
-  { path: 'admin', loadChildren: 'app/modules/admin/admin.module'}
+  { path: '', loadChildren: 'app/modules/login/login.module'},
+  { path: '', loadChildren: 'app/modules/user/user.module'},
+  { path: '', loadChildren: 'app/modules/admin/admin.module'}
 ];
 
 @NgModule({
