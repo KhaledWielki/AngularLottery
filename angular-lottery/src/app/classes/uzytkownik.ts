@@ -18,4 +18,8 @@ export class Uzytkownik implements UzytkownikI {
     this.usuniety = usuniety;
     this.rola = rola;
   }
+
+  validate():boolean {
+    return this.imie.length > 0 && this.nazwisko.length > 0 && this.haslo.length > 0 && this.email.length > 0 && this.usuniety === false && this.rola.length > 0;
+  }
 }

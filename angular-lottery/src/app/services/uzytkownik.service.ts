@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable} from "rxjs/index";
+import {Observable, BehaviorSubject} from "rxjs/index";
 import {HttpClient} from "@angular/common/http";
 import {UzytkownikI} from "../interfaces/Uzytkownik";
 
@@ -7,7 +7,6 @@ import {UzytkownikI} from "../interfaces/Uzytkownik";
   providedIn: 'root'
 })
 export class UzytkownikService {
-
   constructor(private http: HttpClient) {
     this.getUzytkownik().subscribe(i => {
       console.log(i);
@@ -16,6 +15,17 @@ export class UzytkownikService {
 
   public getUzytkownik(): Observable<UzytkownikI> {
     return this.http.get<UzytkownikI>("http://127.0.0.1:9000/uzytkownik");
+  }
+
+  public updateUzytkownik(uzytkownik: UzytkownikI) {
+    return this.http.put(`http://127.0.0.1:9000/uzytkownik/${uzytkownik.id}`, {
+        "imie": uzytkownik.imie,
+        "nazwisko": uzytkownik.nazwisko,
+        "haslo": uzytkownik.haslo,
+        "email": uzytkownik.email,
+        "usuniety": uzytkownik.usuniety,
+        "rola": uzytkownik.rola
+      });
   }
 
   public postUzytkownik(uzytkownik: UzytkownikI) {

@@ -12,25 +12,25 @@
       </thead>
 
       <tbody>
-        <tr>
+        <tr *ngFor="let uzytkownik of uzytkownicy">
             <th>
-              <input placeholder="imie" id="imie" type="text" class="validate">
+              <input [(ngModel)]="uzytkownik.imie" placeholder="imie" id="imie" type="text" class="validate">
             </th>
             <th>
-              <input placeholder="nazwisko" id="nazwisko" type="text" class="validate">
+              <input [(ngModel)]="uzytkownik.nazwisko" placeholder="nazwisko" id="nazwisko" type="text" class="validate">
             </th>
-            <th><input placeholder="email" id="email" type="text" class="validate"></th>
+            <th><input [(ngModel)]="uzytkownik.email" placeholder="email" id="email" type="text" class="validate"></th>
             <th>
-              <a class="btn-floating btn-large waves-effect waves-light red">
+              <a *ngIf="uzytkownik.usuniety" class="btn-floating btn-large waves-effect waves-light red">
                 <i class="material-icons">check</i>
               </a>
-              <a class="btn-floating btn-large waves-effect waves-light green">
+              <a *ngIf="!uzytkownik.usuniety" class="btn-floating btn-large waves-effect waves-light green">
                 <i class="material-icons">close</i>
               </a>
             </th>
-            <th><input placeholder="rola" id="rola" type="text" class="validate"></th>
+            <th><input [(ngModel)]="uzytkownik.rola" placeholder="rola" id="rola" type="text" class="validate"></th>
             <th>
-              <a class="btn-floating btn-large waves-effect waves-light green">
+              <a (click)="edit(uzytkownik)" class="btn-floating btn-large waves-effect waves-light green">
                 <i class="material-icons">edit</i>
               </a>
             </th>
@@ -40,21 +40,15 @@
               <input [(ngModel)]="uzytkownik.imie"  name="imie" placeholder="imie" id="imie" type="text"  class="validate">
             </th>
             <th>
-              <input placeholder="nazwisko" id="nazwisko" type="text" class="validate">
+              <input [(ngModel)]="uzytkownik.nazwisko" name="nazwisko" placeholder="nazwisko" id="nazwisko" type="text" class="validate">
             </th>
-            <th><input placeholder="email" id="email" type="text" class="validate"></th>
+            <th><input [(ngModel)]="uzytkownik.email" name="email" placeholder="email" id="email" type="text" class="validate"></th>
             <th>
-              <a class="btn-floating btn-large waves-effect waves-light red">
-                <i class="material-icons">check</i>
-              </a>
-              <a class="btn-floating btn-large waves-effect waves-light green">
-                <i class="material-icons">close</i>
-              </a>
             </th>
-            <th><input placeholder="rola" id="rola" type="text" class="validate"></th>
+            <th><input [(ngModel)]="uzytkownik.rola" name="rola" placeholder="rola" id="rola" type="text" class="validate"></th>
             <th>
-              <a class="btn-floating btn-large waves-effect waves-light green">
-                <i class="material-icons" (click)="add()" >add</i>
+              <a (click)="add()" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons" >add</i>
               </a>
             </th>
         </tr>
