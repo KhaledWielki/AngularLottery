@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import {  HttpClient } from '@angular/common/http';
 import {  Miejsce } from '../interfaces/Miejsce';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/index';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MiejscaService {
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
     this.getMiejsca().subscribe(i => {
       console.log(i);
     });
@@ -20,7 +20,9 @@ export class MiejscaService {
 
   public postMiejsce() {
     return this.http.post("http://127.0.0.1:9000/miejsca",
-      { "nr_miejsca": 10, "wolne": "true" }
+      {
+        "nr_miejsca": 10,
+        "wolne": "true" }
     );
   }
 }

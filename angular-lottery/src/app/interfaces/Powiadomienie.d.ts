@@ -1,6 +1,6 @@
 export interface Powiadomienie {
   id: number,
-  data: Date,
+  data: string,
   tresc: string,
   tytul: string
 }
