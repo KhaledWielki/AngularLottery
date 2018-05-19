@@ -21,27 +21,6 @@ export class AppComponent {
               private wynikiLoterii: WynikiLoteriiService,
               private zgloszenia: ZgloszeniaDoLoteriiService,
               private uzytkownik: UzytkownikService) {
-<<<<<<< HEAD
-
-              this.miejsca.postMiejsce().subscribe(v => {
-                console.log("miejsce utwrzone" , v);
-              });
-              this.regulamin.postRegulamin().subscribe(v => {
-                console.log("regulamin utworzony" , v);
-              });
-              this.loteria.postLoteria().subscribe(v => {
-                console.log("Loteria utworzona" , v);
-              });
-              this.powiadomienie.postPowiadomienie().subscribe(v => {
-                console.log("Powiadomienie utworzone" , v);
-              });
-              this.wynikiLoterii.postWynikiLoterii().subscribe(v => {
-                console.log("Wyniki loterii utowrzone", v);
-              });
-              this.zgloszenia.postZgloszenia().subscribe(v => {
-                console.log("Zgloszenie utworzone", v)
-              });
-=======
               // this.miejsca.postMiejsce().subscribe(v => {
               //   console.log("miejsce utwrzone" , v);
               // });
@@ -60,7 +39,6 @@ export class AppComponent {
               // this.zgloszenia.postZgloszenia().subscribe(v => {
               //   console.log("Zgloszenie utworzone", v)
               // });
->>>>>>> 6ff4c7a5dbc358cf949af11ca3f71f2b8337851b
   }
   title = 'app';
 }
