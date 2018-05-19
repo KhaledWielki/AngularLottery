@@ -1,33 +1,38 @@
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
-    </div>
-  </nav>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo right">Logo</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
 
-  <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
-      <li>
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li>
+            <a href="#!">one</a>
+          </li>
+          <li>
+            <a href="#!">two</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">three</a>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">view_module</i>four</a>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="material-icons">cloud</i>five</a>
+          </li>
+        </ul>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        <a href="badges.html">Components</a>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        <a href="collapsible.html">JavaScript</a>
       </li>
     </ul>
+  </div>
+</nav>

@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   // $(".dropdown-trigger").dropdown();
+   $(".dropdown-trigger").dropdown();
   }
 
 }
