@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f2d3b50-fc26-4fcb-8aef-421b70a906ed" name="Default" comment="Dodanie kolejnych">
-      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/services/wyniki-loterii.service.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/services/wyniki-loterii.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/services/zgloszenia-do-loterii.service.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/services/zgloszenia-do-loterii.service.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Loteria.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Powiadomienie.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Regulamin.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Uzytkownik.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/WynikiLoterii.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/angular-lottery/src/app/interfaces/ZgloszeniaDoLoterii.d.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/package-lock.json" afterPath="$PROJECT_DIR$/angular-lottery/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/package.json" afterPath="$PROJECT_DIR$/angular-lottery/package.json" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/src/app/app.component.ts" afterPath="$PROJECT_DIR$/angular-lottery/src/app/app.component.ts" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-lottery/src/app/app.module.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,116 +21,75 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="miejsca.service.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/miejsca.service.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regulamin.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/regulamin.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uzytkownik.service.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/uzytkownik.service.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wyniki-loterii.service.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/wyniki-loterii.service.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wyniki-loterii.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/wyniki-loterii.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="admin.module.spec.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/admin/admin.module.spec.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.module.spec.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/login/login.module.spec.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Powiadomienie.d.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Powiadomienie.d.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="powiadomienie.service.spec.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/powiadomienie.service.spec.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#56#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Miejsce.d.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Miejsce.d.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -163,6 +120,14 @@
         <option value="$PROJECT_DIR$/angular-lottery/src/app/services/zgloszenia-do-loterii.service.ts" />
         <option value="$PROJECT_DIR$/angular-lottery/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-lottery/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/services/interfaces/IMiejsce.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Logeria.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Loteria.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Regulamin.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Uzytkownik.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/WynikiLoterii.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/ZgloszeniaDoLoterii.d.ts" />
+        <option value="$PROJECT_DIR$/angular-lottery/src/app/interfaces/Powiadomienie.d.ts" />
       </list>
     </option>
   </component>
@@ -230,18 +195,20 @@
               <item name="angular-lottery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularLottery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularLottery" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-lottery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AngularLottery" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngularLottery" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngularLottery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngularLottery" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,6 +221,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -275,8 +243,10 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/services/miejsca.service.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/app.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/app.module.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/modules/login/login.module.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/index.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -284,36 +254,10 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/loteria/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/loteria/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/loteria/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/loteria/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/loteria/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/miejsca/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/miejsca/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/miejsca/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/miejsca/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/miejsca/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/regulamin/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/regulamin/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/regulamin/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/regulamin/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/regulamin/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/uzytkownik/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/uzytkownik/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/uzytkownik/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/uzytkownik/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/uzytkownik/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/wyniki_loterii/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/wyniki_loterii/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/wyniki_loterii/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/wyniki_loterii/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/wyniki_loterii/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/zgloszenia_do_loterii/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/zgloszenia_do_loterii/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/zgloszenia_do_loterii/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/zgloszenia_do_loterii/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/api/zgloszenia_do_loterii/model.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/modules/login/login/login.component.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/modules/login/login/login.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/modules/login/login/login.component.spec.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/angular-lottery/src/app/modules/login/login/login.component.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -321,36 +265,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/loteria/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/loteria/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/loteria/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/loteria/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/loteria/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/miejsca/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/miejsca/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/miejsca/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/miejsca/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/miejsca/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/regulamin/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/regulamin/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/regulamin/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/regulamin/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/regulamin/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/uzytkownik/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/uzytkownik/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/uzytkownik/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/uzytkownik/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/uzytkownik/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/wyniki_loterii/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/wyniki_loterii/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/wyniki_loterii/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/wyniki_loterii/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/wyniki_loterii/model.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/zgloszenia_do_loterii/controller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/zgloszenia_do_loterii/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/zgloszenia_do_loterii/index.test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/zgloszenia_do_loterii/model.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/api/zgloszenia_do_loterii/model.test.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -488,11 +402,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526653572160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Powiadomienie services added">
+      <created>1526713118013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526713118014</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15505000" />
+    <option name="totallyTimeSpent" value="16322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -531,7 +452,8 @@
     <MESSAGE value="Dodanie service loteri" />
     <MESSAGE value="Dodanie service regulaminu oraz uzytkownika" />
     <MESSAGE value="Uzupełnienie brakujących providerów" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uzupełnienie brakujących providerów" />
+    <MESSAGE value="Powiadomienie services added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Powiadomienie services added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -540,123 +462,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupaservice.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupaservice.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa-interface.number.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa.pipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa.pipe.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa-klasa.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa-klasa.String.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa-klasa.number.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa/dupa.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/dupa/dupa.module.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-lottery/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,55 +508,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/lottery/index.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/loteria/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/miejsca/model.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/lottery/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/lottery/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/lottery/index.test.js" />
+    <entry file="file://$PROJECT_DIR$/api/loteria/index.js" />
+    <entry file="file://$PROJECT_DIR$/api/miejsca/model.test.js" />
+    <entry file="file://$PROJECT_DIR$/api/lottery/index.js" />
+    <entry file="file://$PROJECT_DIR$/api/lottery/model.js" />
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,27 +548,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/miejsca/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/remote/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="293" column="6" lean-forward="false" selection-start-line="293" selection-start-column="6" selection-end-line="293" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/miejsca/controller.js" />
+    <entry file="file://$PROJECT_DIR$/angular-lottery/node_modules/webdriver-js-extender/node_modules/selenium-webdriver/remote/index.js" />
     <entry file="file://$PROJECT_DIR$/angular-lottery/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,23 +561,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="46" column="3" lean-forward="false" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/miejsca/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/miejsca/index.js" />
     <entry file="file://$PROJECT_DIR$/angular-lottery/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,28 +580,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/miejsca.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <marker date="1526654989879" expanded="true" signature="206:211" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/uzytkownikdir.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/uzytkownikdir.service.spec.ts" />
     <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/zgloszenia-do-loterii.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -868,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,9 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,9 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,7 +623,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -914,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,11 +666,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/admin/admin.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/admin/admin.module.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/interfaces/IMiejsce.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/miejsca.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Miejsce.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Loteria.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Regulamin.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/login/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/login/login.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Uzytkownik.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/WynikiLoterii.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/services/powiadomienie.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/ZgloszeniaDoLoterii.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/modules/login/login.module.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/interfaces/Powiadomienie.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
