@@ -20,6 +20,7 @@ import { MaterializeModule } from 'angular2-materialize';
 import { AdminModule } from './modules/admin/admin.module';
 
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ModalService} from "./services/modal.service";
 
 
 const appRoutes: Routes = [
@@ -54,6 +55,7 @@ const appRoutes: Routes = [
               UzytkownikService,
               ZgloszeniaDoLoteriiService,
               WynikiLoteriiService,
+              ModalService,
               HttpClient
   ],
   bootstrap: [AppComponent]

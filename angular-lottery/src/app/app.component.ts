@@ -6,6 +6,7 @@ import {UzytkownikService} from "./services/uzytkownik.service";
 import {PowiadomienieService} from "./services/powiadomienie.service";
 import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 import {ZgloszeniaDoLoteriiService} from "./services/zgloszenia-do-loterii.service";
+import {ModalService} from "./services/modal.service";
 
 
 @Component({
@@ -20,6 +21,7 @@ export class AppComponent {
               private powiadomienie: PowiadomienieService,
               private wynikiLoterii: WynikiLoteriiService,
               private zgloszenia: ZgloszeniaDoLoteriiService,
+              private modal: ModalService,
               private uzytkownik: UzytkownikService) {
               // this.miejsca.postMiejsce().subscribe(v => {
               //   console.log("miejsce utwrzone" , v);
