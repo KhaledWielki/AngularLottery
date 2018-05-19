@@ -21,7 +21,6 @@ import { AdminModule } from './modules/admin/admin.module';
 
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
   { path: 'login', loadChildren: 'app/modules/login/login.module'},
   { path: 'user', loadChildren: 'app/modules/user/user.module'},
   { path: 'admin', loadChildren: 'app/modules/admin/admin.module'}
