@@ -23,9 +23,9 @@ import { FormsModule } from '@angular/forms';
 
 
 const appRoutes: Routes = [
-  { path: '', loadChildren: 'app/modules/login/login.module'},
-  { path: '', loadChildren: 'app/modules/user/user.module'},
-  { path: '', loadChildren: 'app/modules/admin/admin.module'}
+  { path: 'a', loadChildren: 'app/modules/login/login.module'},
+  { path: 'a', loadChildren: 'app/modules/user/user.module'},
+  { path: 'a', loadChildren: 'app/modules/admin/admin.module'}
 ];
 
 @NgModule({
