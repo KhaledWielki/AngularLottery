@@ -13,6 +13,8 @@ import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 import { LoginModule } from "./modules/login/login.module";
 import { UserModule } from "./modules/user/user.module";
 import { RouterModule, Routes } from '@angular/router';
+import { MenuComponent } from './common/menu/menu.component';
+import { FooterComponent } from './common/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: AppComponent },
@@ -22,7 +24,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
