@@ -11,11 +11,13 @@ import {ZgloszeniaDoLoteriiService} from "./services/zgloszenia-do-loterii.servi
 import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 
 import { LoginModule } from "./modules/login/login.module";
+import { UserModule } from "./modules/user/user.module";
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: '', component: AppComponent },
-  { path: 'login', loadChildren: 'app/modules/login/login.module'}
+  { path: '', loadChildren: 'app/modules/login/login.module'},
+  { path: '', loadChildren: 'app/modules/user/user.module'}
 ];
 
 @NgModule({
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     LoginModule,
+    UserModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
