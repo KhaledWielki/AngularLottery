@@ -5,7 +5,6 @@ import { WynikiLosowaniaComponent } from './wyniki-losowania/wyniki-losowania.co
 import { HistoriaLosowanComponent } from './historia-losowan/historia-losowan.component';
 import { ZarzadzanieUzytkownikamiComponent } from './zarzadzanie-uzytkownikami/zarzadzanie-uzytkownikami.component';
 import {RouterModule, Routes} from "@angular/router";
-import {ZgloszeniaDoLoteriiService} from "../../services/zgloszenia-do-loterii.service";
 import {ZgloszeniaDoLoteriiComponent} from "./zgloszenia-do-loterii/zgloszenia-do-loterii.component";
 
 
@@ -43,6 +42,6 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],
-  declarations: [UstawieniaPowiadomienComponent, ZgloszeniaDoLoteriiService, WynikiLosowaniaComponent, HistoriaLosowanComponent, ZarzadzanieUzytkownikamiComponent]
+  declarations: [UstawieniaPowiadomienComponent,  WynikiLosowaniaComponent, HistoriaLosowanComponent, ZarzadzanieUzytkownikamiComponent, ZgloszeniaDoLoteriiComponent]
 })
 export class AdminModule { }
