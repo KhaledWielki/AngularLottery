@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f2d3b50-fc26-4fcb-8aef-421b70a906ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-lottery/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/angular-lottery/src/app/common/menu/menu.component.html" afterPath="$PROJECT_DIR$/angular-lottery/src/app/common/menu/menu.component.html" />
-      <change beforePath="$PROJECT_DIR$/angular-lottery/src/app/modules/admin/historia-losowan/historia-losowan.component.html" afterPath="$PROJECT_DIR$/angular-lottery/src/app/modules/admin/historia-losowan/historia-losowan.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/common/menu/menu.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+              <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -531,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526724539135</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Basic menu created">
+      <created>1526725522972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1526725522972</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28149000" />
+    <option name="totallyTimeSpent" value="29131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -583,7 +588,8 @@
     <MESSAGE value="Getters and setters basicly added" />
     <MESSAGE value="LIterówka" />
     <MESSAGE value="Using intefaces in post's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using intefaces in post's" />
+    <MESSAGE value="Basic menu created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic menu created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,7 +1027,7 @@
     <entry file="file://$PROJECT_DIR$/angular-lottery/src/app/common/menu/menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="80" />
           <folding />
         </state>
       </provider>

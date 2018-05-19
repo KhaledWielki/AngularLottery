@@ -3,7 +3,7 @@
     <a href="#" class="brand-logo right">Logo</a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
       <li>
-        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
 
         <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content'>
@@ -27,21 +27,21 @@
           </li>
         </ul>
       </li>
-      <li>
-        <a href="admin/historiaLosowan">Historia losowań</a>
-      </li>
-      <li>
-        <a href="admin/wynikiLosowan">Wyniki losowania</a>
-      </li>
-      <li>
-        <a href="admin/zarzadzanieUzytkownikami">Zarzadzanie uzytkownikami</a>
-      </li>
-      <li>
-        <a href="admin/ustawieniaPowiadomien">Ustawienia powiadomien</a>
-      </li>
-      <li>
-        <a href="admin/zgloszeniaDoLoterii">Zgłoszenia do loterii</a>
-      </li>
+        <li>
+          <a [routerLink]="['admin/historiaLosowan']">Historia losowań</a>
+        </li>
+        <li>
+          <a [routerLink]="['admin/wynikiLosowan']">Wyniki losowania</a>
+        </li>
+        <li>
+          <a [routerLink]="['admin/zarzadzanieUzytkownikami']">Zarzadzanie uzytkownikami</a>
+        </li>
+        <li>
+          <a [routerLink]="['admin/ustawieniaPowiadomien']">Ustawienia powiadomien</a>
+        </li>
+        <li>
+          <a [routerLink]="['admin/zgloszeniaDoLoterii']">Zgłoszenia do loterii</a>
+        </li>
     </ul>
   </div>
 </nav>
