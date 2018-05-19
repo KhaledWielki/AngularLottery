@@ -18,11 +18,11 @@ export class LoteriaService {
     return this.http.get<Loteria>("http://127.0.0.1:9000/loteria");
   }
 
-  public postLoteria() {
+  public postLoteria(loteria: Loteria) {
     return this.http.post("http://127.0.0.1:9000/loteria",
       {
-        "id_loterii": "1",
-        "zaakcepotowany": "true"}
+        "id_loterii": loteria.id,
+        "data": loteria.data}
     );
   }
 }

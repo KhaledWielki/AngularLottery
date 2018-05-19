@@ -18,12 +18,12 @@ export class WynikiLoteriiService {
     return this.http.get<WynikiLoterii>("http://127.0.0.1:9000/wynikiLoterii");
   }
 
-  public postWynikiLoterii() {
+  public postWynikiLoterii(wyniki: WynikiLoterii) {
     return this.http.post("http://127.0.0.1:9000/wynikiLoterii",
       {
-        "id_loterii": 1,
-        "id_uzytkownika": 1,
-        "id_miejsca": 1
+        "id_loterii": wyniki.id_loterii,
+        "id_uzytkownika": wyniki.id_uzytkownika,
+        "id_miejsca": wyniki.id_miejsca
       });
   }
 }

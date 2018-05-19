@@ -18,10 +18,10 @@ export class RegulaminService {
     return this.http.get<Regulamin>("http://127.0.0.1:9000/regulamin");
   }
 
-  public postRegulamin() {
+  public postRegulamin(regulamin: Regulamin) {
     return this.http.post("http://127.0.0.1:9000/regulamin",
       {
-        "zawartosc": "REGULAMIN DUZO REGULAMINU"}
+        "zawartosc": regulamin.zawartosc}
     );
   }
 }

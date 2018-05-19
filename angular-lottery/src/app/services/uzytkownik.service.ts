@@ -18,15 +18,15 @@ export class UzytkownikService {
     return this.http.get<Uzytkownik>("http://127.0.0.1:9000/uzytkownik");
   }
 
-  public postUzytkownik() {
+  public postUzytkownik(uzytkownik: Uzytkownik) {
     return this.http.post("http://127.0.0.1:9000/uzytkownik",
       {
-        "imie": "Adam" ,
-        "nazwisko": "Rezner",
-        "haslo": "haselko",
-        "email": "adam@mail.com",
-        "usuniety": "false",
-        "rola": "admin"
+        "imie": uzytkownik.imie,
+        "nazwisko": uzytkownik.nazwisko,
+        "haslo": uzytkownik.haslo,
+        "email": uzytkownik.email,
+        "usuniety": uzytkownik.usuniety,
+        "rola": uzytkownik.rola
       });
   }
 }
