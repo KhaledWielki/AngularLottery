@@ -4,6 +4,7 @@ import { UzytkownikI} from '../../../interfaces/Uzytkownik';
 import { Uzytkownik } from '../../../classes/uzytkownik';
 
 import { FormsModule , FormControl, NgForm, NgModel} from '@angular/forms';
+import { toast } from 'angular2-materialize';
 
 
 @Component({
@@ -28,12 +29,16 @@ export class ZarzadzanieUzytkownikamiComponent implements OnInit {
 
 
   public edit(uzytkownik) {
-    this.uzytkownikService.updateUzytkownik(uzytkownik).subscribe(u => console.log(u));
+    this.uzytkownikService.updateUzytkownik(uzytkownik).subscribe(u => {
+      toast("Udało się edytować użytkownika");
+    });
     this.getUsers();
   }
   public add() {
     console.log(this.uzytkownik);
-    this.uzytkownikService.postUzytkownik(this.uzytkownik).subscribe(v => console.log(v));
+    this.uzytkownikService.postUzytkownik(this.uzytkownik).subscribe(v => {
+      toast("Udało się dodać nowego użytkownika");
+    });
     this.getUsers();
   }
 
