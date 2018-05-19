@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { UzytkownikService } from '../../../services/uzytkownik.service';
+import { UzytkownikI} from '../../../interfaces/Uzytkownik';
+import { Uzytkownik } from '../../../classes/uzytkownik';
+
 
 @Component({
   selector: 'app-zarzadzanie-uzytkownikami',
@@ -6,8 +10,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zarzadzanie-uzytkownikami.component.css']
 })
 export class ZarzadzanieUzytkownikamiComponent implements OnInit {
+  uzytkownik: Uzytkownik;
 
-  constructor() { }
+  constructor(private uzytkownikService: UzytkownikService) { 
+    this.uzytkownik = new Uzytkownik('', '', '', '', '', '', '');
+  }
 
   ngOnInit() {
   }

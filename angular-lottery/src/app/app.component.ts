@@ -21,6 +21,7 @@ export class AppComponent {
               private wynikiLoterii: WynikiLoteriiService,
               private zgloszenia: ZgloszeniaDoLoteriiService,
               private uzytkownik: UzytkownikService) {
+
               this.miejsca.postMiejsce().subscribe(v => {
                 console.log("miejsce utwrzone" , v);
               });
@@ -38,9 +39,6 @@ export class AppComponent {
               });
               this.zgloszenia.postZgloszenia().subscribe(v => {
                 console.log("Zgloszenie utworzone", v)
-              });
-              this.uzytkownik.postUzytkownik().subscribe(v => {
-                console.log("Uzytkownik utworzony", v)
               });
   }
   title = 'app';

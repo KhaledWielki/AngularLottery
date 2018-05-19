@@ -19,11 +19,13 @@ import { FooterComponent } from './common/footer/footer.component';
 import { MaterializeModule } from 'angular2-materialize';
 import { AdminModule } from './modules/admin/admin.module';
 
+import { FormsModule } from '@angular/forms';
+
 
 const appRoutes: Routes = [
-  { path: 'a', loadChildren: 'app/modules/login/login.module'},
-  { path: 'a', loadChildren: 'app/modules/user/user.module'},
-  { path: 'a', loadChildren: 'app/modules/admin/admin.module'}
+  { path: '', loadChildren: 'app/modules/login/login.module'},
+  { path: '', loadChildren: 'app/modules/user/user.module'},
+  { path: '', loadChildren: 'app/modules/admin/admin.module'}
 ];
 
 @NgModule({
@@ -39,6 +41,7 @@ const appRoutes: Routes = [
     LoginModule,
     UserModule,
     AdminModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

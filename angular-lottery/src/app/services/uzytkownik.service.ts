@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Observable} from "rxjs/index";
 import {HttpClient} from "@angular/common/http";
-import {Uzytkownik} from "../interfaces/Uzytkownik";
+import {UzytkownikI} from "../interfaces/Uzytkownik";
 
 @Injectable({
   providedIn: 'root'
@@ -14,11 +14,11 @@ export class UzytkownikService {
     });
   }
 
-  public getUzytkownik(): Observable<Uzytkownik> {
-    return this.http.get<Uzytkownik>("http://127.0.0.1:9000/uzytkownik");
+  public getUzytkownik(): Observable<UzytkownikI> {
+    return this.http.get<UzytkownikI>("http://127.0.0.1:9000/uzytkownik");
   }
 
-  public postUzytkownik(uzytkownik: Uzytkownik) {
+  public postUzytkownik(uzytkownik: UzytkownikI) {
     return this.http.post("http://127.0.0.1:9000/uzytkownik",
       {
         "imie": uzytkownik.imie,
