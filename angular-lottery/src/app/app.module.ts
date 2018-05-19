@@ -16,10 +16,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './common/menu/menu.component';
 import { FooterComponent } from './common/footer/footer.component';
 
+import { MaterializeModule } from 'angular2-materialize';
+import { AdminModule } from './modules/admin/admin.module';
+
+
 const appRoutes: Routes = [
   { path: '', component: AppComponent },
-  { path: '', loadChildren: 'app/modules/login/login.module'},
-  { path: '', loadChildren: 'app/modules/user/user.module'}
+  { path: 'login', loadChildren: 'app/modules/login/login.module'},
+  { path: 'user', loadChildren: 'app/modules/user/user.module'},
+  { path: 'admin', loadChildren: 'app/modules/admin/admin.module'}
 ];
 
 @NgModule({
@@ -30,9 +35,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    MaterializeModule,
     HttpClientModule,
     LoginModule,
     UserModule,
+    AdminModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
