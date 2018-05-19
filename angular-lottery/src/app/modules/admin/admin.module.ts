@@ -6,6 +6,7 @@ import { HistoriaLosowanComponent } from './historia-losowan/historia-losowan.co
 import { ZarzadzanieUzytkownikamiComponent } from './zarzadzanie-uzytkownikami/zarzadzanie-uzytkownikami.component';
 import {RouterModule, Routes} from "@angular/router";
 import {ZgloszeniaDoLoteriiComponent} from "./zgloszenia-do-loterii/zgloszenia-do-loterii.component";
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],

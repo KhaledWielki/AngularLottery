@@ -3,6 +3,8 @@ import { UzytkownikService } from '../../../services/uzytkownik.service';
 import { UzytkownikI} from '../../../interfaces/Uzytkownik';
 import { Uzytkownik } from '../../../classes/uzytkownik';
 
+import { FormsModule , FormControl, NgForm, NgModel} from '@angular/forms';
+
 
 @Component({
   selector: 'app-zarzadzanie-uzytkownikami',
@@ -14,6 +16,11 @@ export class ZarzadzanieUzytkownikamiComponent implements OnInit {
 
   constructor(private uzytkownikService: UzytkownikService) { 
     this.uzytkownik = new Uzytkownik('', '', '', '', '', '', '');
+  }
+
+  public add() {
+    console.log(this.uzytkownik);
+    //this.uzytkownikService.postUzytkownik(this.uzytkownik);
   }
 
   ngOnInit() {

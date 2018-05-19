@@ -19,7 +19,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { MaterializeModule } from 'angular2-materialize';
 import { AdminModule } from './modules/admin/admin.module';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -36,12 +36,13 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     MaterializeModule,
     HttpClientModule,
     LoginModule,
     UserModule,
     AdminModule,
-    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

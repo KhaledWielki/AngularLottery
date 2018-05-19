@@ -37,7 +37,7 @@
         </tr>
         <tr>
             <th>
-              <input placeholder="imie" id="imie" type="text"  class="validate">
+              <input [(ngModel)]="uzytkownik.imie"  name="imie" placeholder="imie" id="imie" type="text"  class="validate">
             </th>
             <th>
               <input placeholder="nazwisko" id="nazwisko" type="text" class="validate">
@@ -54,7 +54,7 @@
             <th><input placeholder="rola" id="rola" type="text" class="validate"></th>
             <th>
               <a class="btn-floating btn-large waves-effect waves-light green">
-                <i class="material-icons">add</i>
+                <i class="material-icons" (click)="add()" >add</i>
               </a>
             </th>
         </tr>
