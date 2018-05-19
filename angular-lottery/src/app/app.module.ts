@@ -10,13 +10,26 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {ZgloszeniaDoLoteriiService} from "./services/zgloszenia-do-loterii.service";
 import {WynikiLoteriiService} from "./services/wyniki-loterii.service";
 
+import { LoginModule } from "./modules/login/login.module";
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '', component: AppComponent },
+  { path: 'login', loadChildren: 'app/modules/login/login.module'}
+];
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    LoginModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [MiejscaService,
               LoteriaService,
